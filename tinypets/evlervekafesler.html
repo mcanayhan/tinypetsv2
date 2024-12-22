@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="tinypets.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TİNY PETS SHOP - Evler ve Kafesler</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('img/arkaplan.jpg') no-repeat center center fixed;
+        background-size: cover;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8); /* Beyaz arka plan ve şeffaflık */
+        border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .urunler {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .urun {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            text-align: center;
+            width: 200px;
+            margin: 0 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .urun .fiyat {
+            font-weight: bold;
+            color: green;
+            margin-top: 10px;
+        }
+        .urun button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .urun button:hover {
+            background-color: #050505;
+        }
+        .cart {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 200px;
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .cart h3 {
+            margin-top: 0;
+        }
+        .cart ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .cart ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Evler ve Kafesler</h1>
+        <div class="urunler">
+            <div class="evler">
+                <div class="urun">
+                    <h2>Köpek Evi</h2>
+                    <img src="img/köpekevi.jpg" alt="Köpek Evi Resmi">
+                    <p>Köpekleriniz için isim alanı bulunan pembe kalp detaylı köpek evi.</p>
+                    <p class="fiyat">₺1349.99</p>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+                <div class="urun">
+                    <h2>Kedi Evi</h2>
+                    <img src="img/kedievi.jpg" alt="Kedi Evi Resmi">
+                    <p>Kedileriniz için çift katlı merdivenli kedi evi.Tüm yaştan kedilere uygundur.</p>
+                    <p class="fiyat">₺1349.99</p>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </div>
+            <div class="kafesler">
+                <div class="urun">
+                    <h2>Hamster Kafesi</h2>
+                    <img src="img/hamsterkafesi.jpg" alt="Hamster Kafesi Resmi">
+                    <p>Hamsterler için cam ayakları kolayca sökülüp takılabilen hamster kafesi.</p>
+                    <p class="fiyat">₺799.99</p>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+                <div class="urun">
+                    <h2>Kuş Kafesi</h2>
+                    <img src="img/kuskafesi.jpg" alt="Kuş Kafesi Resmi">
+                    <p>Ahşap yapım kuş ve papağan kafesi.</p>
+                    <p class="fiyat">₺799.99</p>
+                    <button class="add-to-cart">Sepete Ekle</button>
+                </div>
+            </div>
+            <div id="cart" class="cart">
+                <h3>Sepet</h3>
+                <ul id="cart-items"></ul>
+                <button id="clear-cart">Sepeti Temizle</button>
+                <button id="checkout">Sipariş Ver</button>
+        </div>
+        <div id="message" class="message"></div> <!-- Sipariş mesajı -->
+        <a href="tinypetssahiplendirme.html"><button>Hayvan Sahiplenmek İster Misiniz?</button></a>
+        <script src="evlerkafesler.js"></script>
+    </div>
+</body>
+</html>

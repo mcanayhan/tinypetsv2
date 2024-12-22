@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <link rel="stylesheet" href="tinypets.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayvan Sahiplendirme</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            background: url('img/arkaplan2.jpg') no-repeat center center fixed;
+        background-size: cover;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        .animal {
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .animal img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .animal .description {
+            margin-top: 10px;
+            text-align: center;
+            color: #666;
+        }
+
+        .animal button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #ff6347;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .animal button:hover {
+            background-color: #050505;
+        }
+    </style>
+</head>
+<body>
+    <div class="animal">
+        <img src="img/chihuahua.jpg" alt="Chihuahua" onerror="this.onerror=null; this.src='img/default.jpg';">
+        <div class="description">
+            <h2>Chihuahua</h2>
+            <p>Bu Chihuahua çok sevimli ve cana yakın. Kendisi 3 yaşında ve aşıları tamamlanmıştır.</p>
+        </div>
+        <button onclick="redirectToPage('https://www.instagram.com/tinypetsss/')">İletişim</button>
+    </div>
+    
+    <div class="animal">
+        <img src="img/goldenretriever.jpg" alt="Golden Retriever" onerror="this.onerror=null; this.src='img/default.jpg';">
+        <div class="description">
+            <h2>Golden Retriever</h2>
+            <p>Bu Golden Retriever çok oyuncu ve enerjik. 2 yaşında ve tüm aşıları yapılmış durumda.</p>
+        </div>
+        <button onclick="redirectToPage('https://www.instagram.com/tinypetsss/')">İletişim</button>
+    </div>
+    
+    <div class="animal">
+        <img src="img/fransizbulldog.jpg" alt="Fransız Bulldog" onerror="this.onerror=null; this.src='img/default.jpg';">
+        <div class="description">
+            <h2>Fransız Bulldog</h2>
+            <p>Bu Fransız Bulldog sakin ve çocuklarla iyi anlaşan bir köpektir. 4 yaşında ve aşıları günceldir.</p>
+        </div>
+        <button onclick="redirectToPage('https://www.instagram.com/tinypetsss/')">İletişim</button>
+    </div>
+    
+    <div class="animal">
+        <img src="img/dakhund.jpg" alt="Dakhund" onerror="this.onerror=null; this.src='img/default.jpg';">
+        <div class="description">
+            <h2>Dakhund</h2>
+            <p>Bu Dakhund çok sevimli ve aile ortamına uygun bir köpektir. 1.5 yaşında ve sağlıklıdır.</p>
+        </div>
+        <button onclick="redirectToPage('https://www.instagram.com/tinypetsss/')">İletişim</button>
+    </div>
+
+    <script>
+        function redirectToPage(url) {
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
+
+

@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.urunler {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.urun {
+    background-color: #f5f5f2;
+    border: 1px solid #f5f2f2;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    margin: 0 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.urun img {
+    width: 100%; /* Resmi kapın genişliğine uygun hale getir */
+    height: auto; /* Orijinal en-boy oranını koru */
+}
+
+a > button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999; /* Diğer içeriklerin üzerinde olmasını sağlar */
+}
+button {
+    background-color: #ff6347; /* Turuncu renk */
+    color: #ffffff; /* Beyaz renk */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-bottom: 10px; /* Butonlar arası boşluk */
+}
+.urun select {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+.urun select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+    outline: none;
+    background-color: #e6f7ff; /* Odaklanıldığında arka plan rengini değiştirir */
+}
+.notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    z-index: 1000;
+    transition: opacity 1s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
